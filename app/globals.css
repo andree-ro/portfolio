@@ -1,20 +1,13 @@
 /* app/globals.css */
 @import "tailwindcss";
 
-/* ============================================
-   TEMA DEL PORTFOLIO (Tailwind v4 — CSS-first)
-   En v4 ya no existe tailwind.config.js: los
-   colores y fuentes personalizadas se definen
-   aquí mismo, dentro de @theme.
-   ============================================ */
 @theme {
-  --color-ink: #0b0e14;
-  --color-panel: #12161f;
-  --color-border: #232838;
-  --color-text: #e7e5e0;
-  --color-muted: #8a93a6;
-  --color-gold: #e8a33d;
-  --color-teal: #3ecf8e;
+  --color-bg: #f4f1e8;        /* fondo general, beige cálido */
+  --color-surface: #faf8f2;   /* fondo de tarjetas, un poco más claro que bg */
+  --color-navy: #1c2b3a;      /* texto principal y acentos fuertes */
+  --color-navy-muted: #5b6b7c; /* texto secundario */
+  --color-line: #ddd5c4;      /* bordes y divisores sutiles */
+  --color-accent: #8c6a3f;    /* único acento: bronce apagado, uso moderado */
 
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
@@ -22,12 +15,10 @@
 }
 
 body {
-  background-color: var(--color-ink);
-  color: var(--color-text);
+  background-color: var(--color-bg);
+  color: var(--color-navy);
 }
 
-/* "Renglón contable": etiqueta + línea punteada + valor,
-   usado en la sección de experiencia. */
 .ledger-line {
   display: flex;
   align-items: baseline;
@@ -36,6 +27,6 @@ body {
 
 .ledger-line .leader {
   flex: 1;
-  border-bottom: 1px dotted var(--color-border);
+  border-bottom: 1px dotted var(--color-line);
   margin-bottom: 4px;
 }

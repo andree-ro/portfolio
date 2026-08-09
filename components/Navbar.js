@@ -1,13 +1,34 @@
-// función en js que se llama navbar, y se marca como lo principal de este archivo
-// los nombres de funciones en react siempre se ponen en Mayuscula
-export default function Navbar(){ 
-    // retornara todo lo que este aquí
-    return (
-        // el # nos lleva a un punto especifico de la página
-        <nav>
-            <a href = "#top"> 
-                andree@dev<span>:~</span>
+export default function Navbar() {
+  return (
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-line bg-bg/95 backdrop-blur">
+      <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-5">
+        <a href="#top" className="font-display text-lg font-semibold text-navy tracking-tight">
+          Andreé Robles
+        </a>
+        <ul className="hidden sm:flex gap-8 text-sm text-navy-muted tracking-wide">
+          {/* estos son links de navegacion dentro de mi pagina */}
+          <li>
+            <a href="#proyectos" className="hover:text-accent transition-colors duration-200">
+              Proyectos
             </a>
-        </nav>
-    );
+          </li>
+          <li>
+            <a href="#experiencia" className="hover:text-accent transition-colors duration-200">
+              Experiencia
+            </a>
+          </li>
+          <li>
+            <a href="#habilidades" className="hover:text-accent transition-colors duration-200">
+              Habilidades
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" className="hover:text-accent transition-colors duration-200">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
