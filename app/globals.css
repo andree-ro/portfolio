@@ -1,0 +1,32 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f4f1e8;        /* fondo general, beige cálido */
+  --color-surface: #faf8f2;   /* fondo de tarjetas, un poco más claro que bg */
+  --color-navy: #1c2b3a;      /* texto principal y acentos fuertes */
+  --color-navy-muted: #5b6b7c; /* texto secundario */
+  --color-line: #ddd5c4;      /* bordes y divisores sutiles */
+  --color-accent: #8c6a3f;    /* único acento: bronce apagado, uso moderado */
+
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-navy);
+}
+
+.ledger-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.ledger-line .leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-line);
+  margin-bottom: 4px;
+}
