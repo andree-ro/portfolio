@@ -6,7 +6,6 @@ export default function Navbar() {
           Andreé Robles
         </a>
         <ul className="hidden sm:flex gap-8 text-sm text-navy-muted tracking-wide">
-          {/* estos son links de navegacion dentro de mi pagina */}
           <li>
             <a href="#proyectos" className="hover:text-accent transition-colors duration-200">
               Proyectos
